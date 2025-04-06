@@ -21,6 +21,7 @@ interface ESP32SensorData {
 export class ESP32Service {
   private baseUrl: string;
   private apiKey: string;
+  setSMSConfig: any;
 
   constructor(ipAddress: string, apiKey: string) {
     this.baseUrl = `http://${ipAddress}/api`;
